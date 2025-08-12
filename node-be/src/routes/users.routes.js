@@ -1,7 +1,8 @@
-var express = require('express');
-var router = express.Router();
+import { Router } from 'express';
+import {userInfo} from '../application/index.js';
 
+const router = Router();
 /* GET users listing. */
 router.get('/', userInfo);
 
-module.exports = router;
+export default router;
